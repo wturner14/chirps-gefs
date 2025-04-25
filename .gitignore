@@ -1,0 +1,7 @@
+# ignore IDL backup files
+*~
+*.sav
+
+# ignore any temp directories
+tmp/
+
