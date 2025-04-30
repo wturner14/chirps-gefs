@@ -164,7 +164,7 @@ PRO CRON_2_CHIRPSGEFS_GLBL_GRAPHICS, Out_Dir, Log_Dir, f_lun
       
       ;Save as png (overwrite existing latest images)
       gname = STRING(Out_Dir,'TotalPrecip_',accum_periods[ap],'day_latest.png',f='(a,a,I2.2,a)')
-      tmpgr.SAVE,gname,RESOLUTION=200
+      tmpgr.SAVE,gname
       ; make a copy for the archive
       aname = STRING(Out_Dir,'archive/TotalPrecip_',accum_periods[ap],'day_',start_year,start_month,start_day,'.png',$
         f='(a,a,I2.2,a,I4.4,I2.2,I2.2,a)')
@@ -236,7 +236,7 @@ PRO CRON_2_CHIRPSGEFS_GLBL_GRAPHICS, Out_Dir, Log_Dir, f_lun
 
       ;Save as png (overwrite existing latest images)
       gname = STRING(Out_Dir,'Anomaly_',accum_periods[ap],'day_latest.png',f='(a,a,I2.2,a)')
-      tmpgr.SAVE,gname,RESOLUTION=200
+      tmpgr.SAVE,gname
       ; make a copy for the archive
       aname = STRING(Out_Dir,'archive/Anomaly_',accum_periods[ap],'day_',start_year,start_month,start_day,'.png',$
         f='(a,a,I2.2,a,I4.4,I2.2,I2.2,a)')
